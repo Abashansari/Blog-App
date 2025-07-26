@@ -3,13 +3,23 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
+import Form from './components/Form'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from 'react-router-dom'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-     <Navbar />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path='/write' element={<Form />} />
+        </Routes>
+      </Router>
+
     </>
   )
 }
