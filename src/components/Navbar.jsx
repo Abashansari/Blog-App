@@ -3,6 +3,7 @@ import XIcon from '@mui/icons-material/X';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
     return (
@@ -25,7 +26,7 @@ export default function Navbar() {
                                 <a className="nav-link" href="#">Lifestyle</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Write</a>
+                                <Link className="nav-link" to="/write">Write Blogs</Link>
                             </li>
                         </ul>
                         <form>
