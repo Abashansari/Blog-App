@@ -9,6 +9,10 @@ import {
   Routes,
   Route
 } from 'react-router-dom'
+import Footer from './components/Footer'
+import About from './components/About'
+import Blogs from './components/Blogs'
+import Home from './components/Home'
 
 function App() {
   return (
@@ -16,10 +20,13 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
           <Route path='/write' element={<Form />} />
+          <Route path='/blog' element={<Blogs/>} />
         </Routes>
       </Router>
-
+    <Footer />
     </>
   )
 }
