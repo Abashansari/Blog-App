@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+.footer.primary-black {
+  background-color:rgb(115, 115, 115);
+  color: white;
+}
+.container.color-parchment{
+  background-color:#FEF4D4;
+}
