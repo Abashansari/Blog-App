@@ -9,12 +9,10 @@ export default function Footer() {
   return (
     <footer className="footer primary-black text-white py-5">
 
-      {/* Main container */}
       <div className="container">
         <div className="row">
           
-          {/* Left Section: Social + Info */}
-          <div className="col-md-5 mb-5">
+          <div className="col-md-5 mb-5 mt-5">
             <div className="mb-3">
               <XIcon /> <YouTubeIcon /> <InstagramIcon /> <LinkedInIcon />
             </div>
@@ -34,8 +32,7 @@ export default function Footer() {
             </a>
           </div>
 
-          {/* Right Section: Form */}
-          <div className="col-md-7">
+          <div className="col-md-7 mt-5">
             <h2 className="subtitle is-3 text-white mb-1"><strong>Contact</strong></h2>
             <h3 className="subtitle is-5 text-light mb-4">Ask me anything</h3>
 
