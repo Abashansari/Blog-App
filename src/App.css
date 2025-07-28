@@ -47,3 +47,19 @@
 .container.color-parchment{
   background-color:#FEF4D4;
 }
+.underline-input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid white;
+  background: transparent;
+  border-radius: 0;
+  padding: 6px 0;
+  font-size: 1rem;
+  color: black;
+}
+
+.underline-input:focus {
+  outline: none;
+  border-bottom: 2px solid black;
+  box-shadow: none;
+}
