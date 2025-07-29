@@ -21,7 +21,7 @@ export default function Form() {
                     <div className="mb-3">
                         <label className="form-label d-block">Upload Blog Image</label>
                         <div className="input-group">
-                            <input type="file" className="form-control" id="inputImage" accept='.jpg, .jpeg, .png'/>
+                            <input type="file" className="form-control" id="inputImage" accept='.jpg, .jpeg, .png' />
                             <label className="input-group-text" htmlFor="inputImage">Upload</label>
                         </div>
                         <small className="form-text text-muted">Accepted formats: JPG, PNG</small>

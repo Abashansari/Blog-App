@@ -8,7 +8,7 @@ export default function () {
                 <div className='row'>
                     <div className='col-md-7 mb-5'>
                         <div className='container color-parchment'>
-                            <div style={{display: "flex", justifyContent: "center",alignItems: "center",height: "100vh"}}>
+                            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
                                 <img src={abash} alt='abash' width='80%' />
                             </div>
                         </div>
@@ -47,7 +47,6 @@ export default function () {
                                 looking for a developer to bring your idea to life, feel free to reach out <br />
                                 — let’s create something great together.
                             </p>
-
                         </div>
                     </div>
                 </div>

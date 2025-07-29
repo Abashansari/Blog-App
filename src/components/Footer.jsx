@@ -11,7 +11,7 @@ export default function Footer() {
 
       <div className="container">
         <div className="row">
-          
+
           <div className="col-md-5 mb-5 mt-5">
             <div className="mb-3">
               <XIcon /> <YouTubeIcon /> <InstagramIcon /> <LinkedInIcon />
@@ -58,7 +58,7 @@ export default function Footer() {
               </div>
 
               <div className="col-12">
-              <button className="btn box-button" type="submit">Submit</button>
+                <button className="btn box-button" type="submit">Submit</button>
               </div>
             </form>
           </div>
