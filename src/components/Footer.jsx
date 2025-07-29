@@ -58,13 +58,7 @@ export default function Footer() {
               </div>
 
               <div className="col-12">
-                <button
-                  className="btn btn-primary"
-                  type="submit"
-                  style={{ background: 'transparent', border: '2px solid white', color: 'white' }}
-                >
-                  Submit
-                </button>
+              <button className="btn box-button" type="submit">Submit</button>
               </div>
             </form>
           </div>
