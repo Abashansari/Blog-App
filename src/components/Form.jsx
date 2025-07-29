@@ -1,37 +1,40 @@
-import React from 'react'
+import React from 'react';
+import '../App.css'
 
 export default function Form() {
     return (
-        <div>
-            <form>
-                <h1 className="mb-3">Add your Blog:</h1>
-                <div className="mb-3">
-                    <label htmlFor="exampleInputTitle" className="form-label" required >Title :</label>
-                    <input type="text" className="form-control" id="exampleInputTitle" aria-describedby="emailHelp" />
-                </div>
-                <div className="mb-3">
-                    <label htmlFor="exampleInputDescription" className="form-label">Description</label>
-                    <input type="text" className="form-control" id="exampleInputDescription" />
-                </div>
-                <div id="emailHelp" className="form-text">Upload Blog's image</div>
-                <div className="file is-link">
-                    <label className="file-label">
-                        <input className="file-input" type="file" name="photo" />
-                        <span className="file-cta">
-                            <span className="file-icon">
-                                <i className="fas fa-upload"></i>
-                            </span>
-                            <span className="file-label"> Choose a file… </span>
-                        </span>
-                    </label>
-                </div>
-                <div className="mb-3">
-                    <label htmlFor="exampleInputDescription" className="form-label">Conclusion</label>
-                    <input type="text" className="form-control" id="exampleInputDescription" />
-                </div>
+        <div className="form-background d-flex justify-content-center align-items-center vh-100">
+            <div className="form-container p-4 rounded shadow bg-white bg-opacity-75">
+                <form style={{ width: '100%', maxWidth: '600px' }}>
+                    <h2 className="mb-4 text-primary text-center">Submit a New Blog</h2>
 
-                <button type="submit" className="btn btn-primary">Add</button>
-            </form>
+                    <div className="mb-3">
+                        <label htmlFor="inputTitle" className="form-label">Blog Title <span className="text-danger">*</span></label>
+                        <input type="text" className="form-control" id="inputTitle" placeholder="Enter your blog title" required />
+                    </div>
+
+                    <div className="mb-3">
+                        <label htmlFor="inputDescription" className="form-label">Short Description</label>
+                        <textarea className="form-control" id="inputDescription" rows="3" placeholder="Write a short summary..."></textarea>
+                    </div>
+
+                    <div className="mb-3">
+                        <label className="form-label d-block">Upload Blog Image</label>
+                        <div className="input-group">
+                            <input type="file" className="form-control" id="inputImage" accept='.jpg, .jpeg, .png'/>
+                            <label className="input-group-text" htmlFor="inputImage">Upload</label>
+                        </div>
+                        <small className="form-text text-muted">Accepted formats: JPG, PNG</small>
+                    </div>
+
+                    <div className="mb-3">
+                        <label htmlFor="inputConclusion" className="form-label">Conclusion</label>
+                        <textarea className="form-control" id="inputConclusion" rows="2" placeholder="Final thoughts or summary"></textarea>
+                    </div>
+
+                    <button type="submit" className="btn btn-primary w-100">Publish Blog</button>
+                </form>
+            </div>
         </div>
-    )
+    );
 }
