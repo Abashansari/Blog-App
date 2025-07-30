@@ -1,7 +1,10 @@
 import express from 'express'
+import connectToMongo from './database.js';
 
 const app = express();
 const port = 5000;
+
+connectToMongo()
 
 try {
     app.get('/', (req, res) => {
