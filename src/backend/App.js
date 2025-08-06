@@ -1,5 +1,5 @@
 import express from 'express'
-import connectToMongo from './database.js';
+import connectToMongo from './db.js';
 
 const app = express();
 const port = 5000;
