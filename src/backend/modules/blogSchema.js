@@ -9,10 +9,10 @@ const blogSchema = new moongoose.Schema ({
         type : String,
         required : true
     },
-    image : {
-        url : String,
-        required : true
-    },
+    // image : {
+    //     url : String,
+    //     required : true
+    // },
     conclusion : {
         type : String,
         required : true
