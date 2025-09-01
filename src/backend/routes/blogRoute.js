@@ -1,5 +1,5 @@
 import express from 'express'
-import blogs from '../modules/blogSchema'
+import blogs from '../modules/blogSchema.js'
 
 const blogRoutes = express.Router()
 
