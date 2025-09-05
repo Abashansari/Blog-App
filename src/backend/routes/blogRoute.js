@@ -1,21 +1,32 @@
-import express from 'express'
-import blogs from '../modules/blogSchema.js'
+import express from 'express';
+import blogs from '../modules/blogSchema.js';
 
-const blogRoutes = express.Router()
+const blogRoutes = express.Router();
 
-blogRoutes.post('/addBlog' , async (req,res) => {
-    
-    const {title,summary,conclusion} = req.body()
+blogRoutes.post('/addBlog', async (req, res) => {
+    console.log("POST request hit successfully !");
 
-    const blog = new blogs({
-        title,
-        summary,
-        conclusion
-    })
+    try {
+        const { title, introduction, summary, thoughts } = req.body;
 
-    await blog.save()
-    res.status(201).json(blog)
-    console.log("blog added successfully")
+        if (!title || !introduction || !summary || !thoughts) {
+            return res.status(400).json({ error: "Missing required fields" });
+        }
 
-})
-export default blogRoutes
+        const blog = new blogs({
+            title,
+            introduction,
+            summary,
+            thoughts
+        });
+
+        await blog.save();
+
+        res.status(201).json({ message: "Blog added successfully", blog });
+    } catch (error) {
+        console.error(" Error saving blog:", error.message);
+        res.status(500).json({ error: "Internal server error" });
+    }
+});
+
+export default blogRoutes;
