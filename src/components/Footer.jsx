@@ -7,7 +7,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function Footer() {
   return (
-    <footer className="footer primary-black text-white py-5">
+    <footer className="footer primary-black text-white py-5" id='contact'>
 
       <div className="container">
         <div className="row">
