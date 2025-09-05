@@ -1,23 +1,31 @@
-import moongoose, { Schema } from 'mongoose'
+import mongoose from 'mongoose';
 
-const blogSchema = new moongoose.Schema ({
-    title :{
-        type :String,
-        required :true
-    } ,
-    summary :{
-        type : String,
-        required : true
+const blogSchema = new mongoose.Schema({
+    title: {
+        type: String,
+        required: true
     },
-    // image : {
-    //     url : String,
-    //     required : true
-    // },
-    conclusion : {
+    introduction: {
+        type: String,
+        required: true
+    },
+    summary: {
+        type: String,
+        required: true
+    },
+    thoughts: {
         type : String,
-        required : true
+        required:true
+    },
+    author : {
+        type : String,
+        default:"Admin"
+    },
+    date : {
+        type : Date,
+        default:Date.now
     }
-})
+});
 
-const blogs = moongoose.model('blog',blogSchema)
-export default blogs
+const blogs = mongoose.model('blog', blogSchema);
+export default blogs;
