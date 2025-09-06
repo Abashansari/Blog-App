@@ -3,6 +3,7 @@ import blogs from '../modules/blogSchema.js';
 
 const blogRoutes = express.Router();
 
+// ------------------Add Blog---------------------------------------------------------->
 blogRoutes.post('/addBlog', async (req, res) => {
     console.log("POST request hit successfully !");
 
@@ -28,5 +29,19 @@ blogRoutes.post('/addBlog', async (req, res) => {
         res.status(500).json({ error: "Internal server error" });
     }
 });
+
+// ---------------------------Get Blogs------------------------------------------------------->
+
+blogRoutes.get('/getBlog', async (req,res)=>{
+    // const {id} = req.params
+    try {
+        const allBlogs = await blogs.findById()
+    res.status(201).json({message:' all blogs found successfully',allBlogs})
+
+    } catch (error) {
+        res.status(500).json({message:"Faild to fetch all blogs",error:error.message})
+    }
+    
+})
 
 export default blogRoutes;
