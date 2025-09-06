@@ -43,65 +43,6 @@
 
 /* my Style/Css */
 
-/* for footer */
-.footer.primary-black {
-  background-color:rgb(115, 115, 115);
-  color: white;
-}
-.container.color-parchment{
-  background-color:#FEF4D4;
-  height:100%;
-}
-.underline-input {
-  width: 100%;
-  border: none;
-  border-bottom: 2px solid white;
-  background: transparent;
-  border-radius: 0;
-  padding: 6px 0;
-  font-size: 1rem;
-  color: black;
-}
-
-.underline-input:focus {
-  outline: none;
-  border-bottom: 2px solid black;
-  box-shadow: none;
-}
-.underline-input-Home {
-  width: 100%;
-  border: none;
-  border-bottom: 2px solid black;
-  background: transparent;
-  border-radius: 0;
-  padding: 6px 0;
-  font-size: 1rem;
-  color: black;
-}
-.underline-input-Home:focus {
-  outline: none;
-  border-bottom: 2px solid black;
-  box-shadow: none;
-}
-.box-button {
-  background: transparent;
-  border: 2px solid white;
-  color: white;
-  border-radius: 6px;
-  padding: 12px 40px; 
-  min-width: 180px;   
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  text-align: center;
-  transition: all 0.3s ease-in-out;
-}
-
-.box-button:hover {
-  background-color: white;
-  color: #007bff;
-  cursor: pointer;
-}
-
 /* for Blog Form */
 .form-background {
   background-image: url('/bgImage.jpeg');
