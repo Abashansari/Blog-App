@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css'
 
-export default function Form() {
+export default function BlogForm() {
     return (
         <div className="form-background d-flex justify-content-center align-items-center vh-100">
             <div className="form-container p-4 rounded shadow bg-white bg-opacity-75">
