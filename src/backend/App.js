@@ -12,6 +12,7 @@ app.use(cors());
 app.use(express.json()); 
 
 app.use('/api/blog', blogRoutes);
+app.use('/upload',express.static('upload'))
 
 app.get('/', (req, res) => {
   res.json({ message: "Server is working!" });
