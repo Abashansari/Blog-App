@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../App.css'
 
 export default function BlogForm() {
+    const [text, setText] = useState({title:'', introduction:'', summary:'', thoughts:''})
+    const [image,setImage] = useState(null)
+    const [Message,setMessage] = useState('')
+
+
+
     return (
         <div className="form-background d-flex justify-content-center align-items-center vh-100">
             <div className="form-container p-4 rounded shadow bg-white bg-opacity-75">
@@ -16,6 +22,16 @@ export default function BlogForm() {
                     <div className="mb-3">
                         <label htmlFor="inputDescription" className="form-label">Introduction<span className='text-danger'>*</span></label>
                         <textarea className="form-control" id="inputDescription" rows="3" placeholder="Write a short introduction..."></textarea>
+                    </div>
+
+                    <div className="mb-3">
+                        <label htmlFor="inputImage" className="form-label">
+                            Upload Blog Image <span className="text-danger">*</span>
+                        </label>
+                        <input className="form-control" type="file" id="inputImage" accept="image/*" required />
+                        <div className="form-text">
+                            Accepted formats: JPG, PNG. Max size: 5MB.
+                        </div>
                     </div>
 
                     <div className="mb-3">
