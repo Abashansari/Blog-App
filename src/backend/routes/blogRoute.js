@@ -14,6 +14,9 @@ blogRoutes.post('/addBlog', upload.single('img'),  async (req, res) => {
         if (!title || !introduction || !summary || !thoughts) {
             return res.status(400).json({ error: "Missing required fields" });
         }
+        if(!req.file){
+            return res.status(400).json({error:'Image is required !'})
+        }
 
         const blog = new blogs({
             title,
