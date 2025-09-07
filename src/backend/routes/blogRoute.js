@@ -1,10 +1,11 @@
 import express from 'express';
 import blogs from '../modules/blogSchema.js';
+import upload from '../middleware/multerConfig.js';
 
 const blogRoutes = express.Router();
 
 // ------------------Add Blog---------------------------------------------------------->
-blogRoutes.post('/addBlog', async (req, res) => {
+blogRoutes.post('/addBlog', upload.single('img'),  async (req, res) => {
     console.log("POST request hit successfully !");
 
     try {
@@ -17,6 +18,7 @@ blogRoutes.post('/addBlog', async (req, res) => {
         const blog = new blogs({
             title,
             introduction,
+            img : req.file.filename,
             summary,
             thoughts
         });
