@@ -35,11 +35,11 @@ blogRoutes.post('/addBlog', async (req, res) => {
 blogRoutes.get('/getBlog', async (req,res)=>{
     // const {id} = req.params
     try {
-        const allBlogs = await blogs.findById()
-    res.status(201).json({message:' all blogs found successfully',allBlogs})
+        const allBlogs = await blogs.find()
+    res.status(201).json(allBlogs)
 
     } catch (error) {
-        res.status(500).json({message:"Faild to fetch all blogs",error:error.message})
+        res.status(500).json({error:error.message})
     }
     
 })
