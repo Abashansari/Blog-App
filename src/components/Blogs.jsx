@@ -24,7 +24,7 @@ export default function Blogs() {
     <>
       <div className='container'>This is Blog page</div>
       {blogs.map((blog) => {
-        return <CardItems key={blog._id} title={blog.title} introduction={blog.introduction} summary={blog.summary} thoughts={blog.thoughts} />
+        return <CardItems key={blog._id} title={blog.title} introduction={blog.introduction} image={blog.img} summary={blog.summary} thoughts={blog.thoughts} />
       })}
     </>
   )
