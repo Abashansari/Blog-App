@@ -5,7 +5,7 @@ import upload from '../middleware/multerConfig.js';
 const blogRoutes = express.Router();
 
 // ------------------Add Blog---------------------------------------------------------->
-blogRoutes.post('/addBlog', upload.single('img'),  async (req, res) => {
+blogRoutes.post('/addBlog', upload.single('img'), async (req, res) => {
     console.log("POST request hit successfully !");
 
     try {
@@ -14,14 +14,14 @@ blogRoutes.post('/addBlog', upload.single('img'),  async (req, res) => {
         if (!title || !introduction || !summary || !thoughts) {
             return res.status(400).json({ error: "Missing required fields" });
         }
-        if(!req.file){
-            return res.status(400).json({error:'Image is required !'})
+        if (!req.file) {
+            return res.status(400).json({ error: 'Image is required !' })
         }
 
         const blog = new blogs({
             title,
             introduction,
-            img : req.file.filename,
+            img: req.file.filename,
             summary,
             thoughts
         });
@@ -37,16 +37,32 @@ blogRoutes.post('/addBlog', upload.single('img'),  async (req, res) => {
 
 // ---------------------------Get Blogs------------------------------------------------------->
 
-blogRoutes.get('/getBlog', async (req,res)=>{
+blogRoutes.get('/getBlog', async (req, res) => {
     // const {id} = req.params
     try {
         const allBlogs = await blogs.find()
-    res.status(201).json(allBlogs)
+        res.status(201).json(allBlogs)
 
     } catch (error) {
-        res.status(500).json({error:error.message})
+        res.status(500).json({ error: error.message })
     }
-    
+
+})
+
+//----------------------------Update Image----------------------------------------------------->
+
+blogRoutes.put('/updateImage', upload.single('img'), async (req, res) => {
+
+    const { id } = req.body
+    const fileName = 'TeachersDay.avif'     // without URL
+    // const imgURl = `http://localhost:5000/upload/${fileName}` store image with URL
+
+    const updateBlogs = await blogs.findByIdAndUpdate(id,
+        { img: fileName },
+        { new: true }
+    )
+
+    res.status(201).json(updateBlogs)
 })
 
 export default blogRoutes;
