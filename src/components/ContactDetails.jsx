@@ -7,19 +7,19 @@ export default function ContactDetails() {
     return (
         <div className='container mt-6 mb-6 fw-6'>
 
-            <div className='container-start d-flex justify-content-left align-items-center gap-2 '>
+            <div className='container-start d-flex justify-content-left align-items-center gap-2 ' style={{ color: '#FF8C00' }}>
                 <PinDropIcon fontSize="medium" />
-                <p className="mb-2">: Sangkhola, East Sikkim, India</p>
+                <p className="mb-2 text-dark">: Sangkhola, East Sikkim, India</p>
             </div>
 
-            <div className='container-start d-flex justify-content-left align-items-center gap-2'>
+            <div className='container-start d-flex justify-content-left align-items-center gap-2' style={{ color: '#FF8C00' }}>
                 <PhonelinkRingIcon fontSize='medium' />
-                <p className="mb-2">: +91 8167259866</p>
+                <p className="mb-2 text-dark">: +91 8167259866</p>
             </div>
 
-            <div className='container-start d-flex justify-content-left align-items-center gap-2'>
+            <div className='container-start d-flex justify-content-left align-items-center gap-2' style={{ color: '#FF8C00' }}>
                 <MarkunreadIcon fontSize='medium' />
-                <p className="mb-2">: ansariabash2004@gmail.com</p>
+                <p className="mb-2 text-dark">: ansariabash2004@gmail.com</p>
             </div>
         </div>
     )

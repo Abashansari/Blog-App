@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-light text-center py-3 shadow-sm mt-5">
       <p className="small mb-0 text-muted">
         &copy; 2025 Designed by
-        <span className="fw-bold text-primary"> Abash Ansari The Great</span>. All Rights Reserved.
+        <span className="fw-bold" style={{ color: '#FF8C00' }}> Abash Ansari The Great</span>. All Rights Reserved.
       </p>
     </footer>
   );

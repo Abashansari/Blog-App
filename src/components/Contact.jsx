@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <div id="contact">
       <div className="container my-5">
-        <h1 className="text-center fw-bold mb-4 text-primary">Contact Me</h1>
+        <h1 className="text-center fw-bold mb-4" style={{ color: '#FF8C00' }}>Contact Me</h1>
         <p className="text-center text-muted mb-5">
           Thinking about projects? Let’s collaborate and build something great together.
         </p>
@@ -21,7 +21,7 @@ export default function Contact() {
           <div className="col-md-6 p-4 border-end">
             <ContactDesc />
             <ContactDetails />
-            <h2 className="fw-bold mb-3">Follow Me</h2>
+            <h2 className="fw-bold mb-3 text-dark">Follow Me</h2>
             <SocialmediaIcons />
           </div>
 

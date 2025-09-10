@@ -10,7 +10,7 @@ export default function HomeBody2() {
             <div className="card-body" style={{ textAlign: 'center' }}>
               <h5 className="card-title title is-3 has-text-weight-bold is-uppercase text-black">
                 “The path isn’t always clear, but your feet know how to
-                <span className="has-text-primary"> walk</span>.”
+                <span style={{ color: '#FF8C00' }}> walk</span>.”
               </h5>
             </div>
           </div>

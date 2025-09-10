@@ -20,12 +20,14 @@ export default function Blogs() {
     getBlogs()
   }, [])
 
-  return (
-    <>
-      <div className='container'>This is Blog page</div>
-      {blogs.map((blog) => {
-        return <CardItems key={blog._id} author={blog.author} title={blog.title} introduction={blog.introduction} image={blog.img} summary={blog.summary} thoughts={blog.thoughts} date={blog.date}/>
-      })}
-    </>
-  )
+   return (
+    <div className="container mt-5 text-dark">
+      <h2 className="mb-4">Blogs</h2>
+      <div className="d-flex justify-content-center align-items-center flex-wrap gap-4">
+        {blogs.map((blog) => (
+          <CardItems key={blog._id} author={blog.author} title={blog.title} introduction={blog.introduction} image={blog.img} summary={blog.summary} thoughts={blog.thoughts} date={blog.date} />
+        ))}
+      </div>
+    </div>
+  );
 }
