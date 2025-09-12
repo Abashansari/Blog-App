@@ -5,7 +5,7 @@ export default function HomeBody4() {
     <div className='container '>
         <hr />
         <div className='row'>
-          <div className='col-md-7 title is-3 has-text-weight-bold is-uppercase text-black d-flex align-items-center justify-content-center' style={{ textAlign: 'center', color: '#FF8C00' }}>
+          <div className='col-md-7 title is-3 has-text-weight-bold is-uppercase text-black d-flex align-items-center justify-content-center text-center text-primary'>
             Never Miss a New Post.
           </div>
           <div className='col-md-4'>
@@ -20,7 +20,7 @@ export default function HomeBody4() {
                   <input type="email" id="email" className="form-control border-dark shadow-sm" placeholder="you@example.com" />
                 </div>
                 <div className='col-3'>
-                  <button type='submit' className='btn' style={{ backgroundColor: '#FF8C00', color: 'white' }}>Subscribe</button>
+                  <button type='submit' className='btn btn-primary'>Subscribe</button>
                 </div>
               </div>
 

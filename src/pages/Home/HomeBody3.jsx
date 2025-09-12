@@ -1,5 +1,5 @@
 import React from 'react'
-import abash from '../assets/abash.jpeg'
+import abash from '../../assets/abash.jpeg'
 
 export default function HomeBody3() {
   return (

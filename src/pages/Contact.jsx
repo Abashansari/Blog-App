@@ -1,20 +1,20 @@
 import React from "react";
-import ContactForm from "./ContactForm";
-import ContactDetails from "./ContactDetails";
-import SocialmediaIcons from "./SocialmediaIcons";
-import ContactDesc from "./ContactDesc";
+import ContactForm from "./Contact/ContactForm.jsx";
+import ContactDetails from "./Contact/ContactDetails.jsx";
+import SocialmediaIcons from "../common/SocialmediaIcons.jsx";
+import ContactDesc from "./Contact/ContactDesc.jsx";
 
 export default function Contact() {
   return (
     <div id="contact">
       <div className="container my-5">
-        <h1 className="text-center fw-bold mb-4" style={{ color: '#FF8C00' }}>Contact Me</h1>
+        <h1 className="text-center fw-bold mb-4 text-primary">Contact Me</h1>
         <p className="text-center text-muted mb-5">
           Thinking about projects? Let’s collaborate and build something great together.
         </p>
       </div>
 
-      <div className="card shadow-lg border-0 rounded-4 mb-6 p-4" style={{ backgroundColor: "#ffffff" }}>
+      <div className="card shadow-lg border-0 rounded-4 mb-6 p-4 bg-white">
         <div className="row g-0">
 
           {/* Left Side */}

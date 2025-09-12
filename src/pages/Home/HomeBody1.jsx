@@ -1,6 +1,6 @@
 import React from 'react'
-import abash from '../assets/abash.jpeg'
-import Blogs from './Blogs'
+import abash from '../../assets/abash.jpeg'
+import Blogs from '../Blogs.jsx'
 
 export default function HomeBody1() {
   return (

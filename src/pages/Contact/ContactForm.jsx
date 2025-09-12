@@ -20,7 +20,7 @@ export default function ContactForm() {
                 <textarea className="form-control" id="message" rows="5" placeholder="Write about your project idea"></textarea>
             </div>
 
-            <button type="submit" className="btn w-100" style={{ backgroundColor: '#FF8C00', color: 'white' }}><SendIcon className='me-2' /> Send Message</button>
+            <button type="submit" className="btn w-100 btn-primary"><SendIcon className='me-2' /> Send Message</button>
 
         </form>
     )

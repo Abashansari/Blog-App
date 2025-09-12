@@ -7,7 +7,7 @@ export default function Navbar() {
         <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-6 fixed-top">
             <div className="container-fluid">
 
-                <a className="navbar-brand fw-bold d-flex align-items-center" href="#" style={{ color: '#FF8C00' }}>
+                <a className="navbar-brand fw-bold d-flex align-items-center navbar-brand-color" href="#">
                     <LaptopChromebookIcon fontSize='large' className='me-2' /> Abash Ansari
                 </a>
 

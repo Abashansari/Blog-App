@@ -4,13 +4,13 @@ import {
   Routes,
   Route
 } from 'react-router-dom'
-import Navbar from './Navbar'
-import Home from './Home'
-import About from './About'
-import BlogForm from './BlogForm'
-import Blogs from './Blogs'
-import Contact from './Contact'
-import Footer from './Footer'
+import Navbar from '../common/Navbar.jsx'
+import Home from './Home.jsx'
+import About from './About.jsx'
+import BlogForm from './Blogs/BlogForm.jsx'
+import Blogs from './Blogs.jsx'
+import Contact from './Contact.jsx'
+import Footer from '../common/Footer.jsx'
 
 
 export default function BlogApp() {

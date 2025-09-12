@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../App.css'
+import '../../styles/main.css'
 import axios from 'axios';
 
 export default function BlogForm() {

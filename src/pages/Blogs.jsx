@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import CardItems from './CardItems'
+import CardItems from '../common/CardItems.jsx'
 import axios from 'axios'
 
 export default function Blogs() {
