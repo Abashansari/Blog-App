@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../../styles/main.css'
 import axios from 'axios';
 
 export default function BlogForm() {

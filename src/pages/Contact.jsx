@@ -1,8 +1,8 @@
 import React from "react";
-import ContactForm from "./Contact/ContactForm.jsx";
-import ContactDetails from "./Contact/ContactDetails.jsx";
-import SocialmediaIcons from "../common/SocialmediaIcons.jsx";
-import ContactDesc from "./Contact/ContactDesc.jsx";
+import ContactDesc from "../components/Contact/ContactDesc";
+import ContactDetails from "../components/Contact/ContactDetails";
+import SocialmediaIcons from "../components/SocialmediaIcons";
+import ContactForm from "../components/Contact/ContactForm";
 
 export default function Contact() {
   return (
@@ -14,7 +14,7 @@ export default function Contact() {
         </p>
       </div>
 
-      <div className="card shadow-lg border-0 rounded-4 mb-6 p-4 bg-white">
+      <div className="card shadow-lg border-0 rounded-4 mb-6 p-4" style={{ backgroundColor: "#ffffff" }}>
         <div className="row g-0">
 
           {/* Left Side */}

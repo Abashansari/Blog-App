@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import CardItems from '../common/CardItems.jsx'
+import CardItems from '../components/CardItems'
 import axios from 'axios'
+
 
 export default function Blogs() {
   const [blogs, setBlogs] = useState([])
@@ -20,7 +21,7 @@ export default function Blogs() {
     getBlogs()
   }, [])
 
-   return (
+  return (
     <div className="container mt-5 text-dark">
       <h2 className="mb-4">Blogs</h2>
       <div className="d-flex justify-content-center align-items-center flex-wrap gap-4">
